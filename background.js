@@ -1,4 +1,4 @@
-// Web Highlight and Jump Back Later - Background Service Worker
+// Web Highlight and Jump Back Later by Lmer - Background Service Worker
 // Handles context menus, keyboard shortcuts, and message passing
 
 // ============================================
@@ -34,7 +34,7 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.notifications.create('onboarding', {
     type: 'basic',
     iconUrl: 'icons/icon-128.png',
-    title: 'Web Highlight Installed!',
+    title: 'Web Highlight and Jump Back Later by Lmer Installed!',
     message: 'Select text and press Ctrl+Shift+H or right-click to jump back later.',
     priority: 2
   });

@@ -1,4 +1,4 @@
-// Storage Utilities for Web Highlight and Jump Back Later
+// Storage Utilities for Web Highlight and Jump Back Later by Lmer
 // Chrome Storage wrapper with validation
 
 const StorageUtils = {

@@ -1,30 +1,66 @@
 @echo off
-title Web Highlight and Jump Back Later - Quick Setup
+title Web Highlight and Jump Back Later by Lmer - Quick Setup
 color 0b
+setlocal enabledelayedexpansion
+
+:: Set the permanent location
+set "PERM_DIR=%USERPROFILE%\Documents\Web-Highlights"
+set "CURRENT_DIR=%~dp0"
+set "CURRENT_DIR=%CURRENT_DIR:~0,-1%"
 
 echo.
 echo  =======================================================
-echo   WEB HIGHLIGHT AND JUMP BACK LATER - QUICK SETUP
+echo   WEB HIGHLIGHT AND JUMP BACK LATER by Lmer - SETUP ^& SAFETY
 echo  =======================================================
 echo.
-echo  To install this extension in Chrome, follow these 3 simple steps:
+
+:: Check if the current folder is in Downloads
+echo %CURRENT_DIR% | findstr /i "Downloads" > nul
+if %errorlevel%==0 (
+    echo [IMPORTANT] Your files are currently in the Downloads folder. 
+    echo If you delete them later, the extension will STOP WORKING.
+    echo.
+    set /p "MOVE_CHOICE=Would you like to move this to your Documents folder for safety? (y/n): "
+    if /i "!MOVE_CHOICE!"=="y" (
+        echo.
+        echo Moving files to: !PERM_DIR! ...
+        mkdir "!PERM_DIR!" 2>nul
+        xcopy /s /e /y /q "!CURRENT_DIR!\*" "!PERM_DIR!\"
+        echo.
+        echo Move complete! Please run the 'setup.bat' from the new location in Documents.
+        echo Opening the new folder now...
+        start "" "!PERM_DIR!"
+        pause
+        exit
+    )
+)
+
 echo.
-echo  1. In the window that just opened, TOGGLE the "Developer mode" 
-echo     switch in the top-right corner to "ON".
+echo  TO INSTALL IN CHROME:
 echo.
-echo  2. Click the "Load unpacked" button.
+echo  1. In the Chrome window that just opened, TURN ON 
+echo     "Developer mode" (top-right corner).
 echo.
-echo  3. Select THIS folder (the one containing this script).
+echo  2. Click "Load unpacked".
+echo.
+echo  3. Select THIS FOLDER: 
+echo     !CURRENT_DIR!
 echo.
 echo  -------------------------------------------------------
-echo  Opening Chrome Extensions page and this folder...
+echo  [SECURITY NOTE] Chrome requires you to click the button 
+echo  manually to protect you from malicious software.
+echo  -------------------------------------------------------
 echo.
+echo  Opening Chrome Extensions page...
 
 :: Open Chrome Extensions page
 start chrome://extensions
 
-:: Open current folder in explorer
+:: Open current folder in explorer to make selection easy
 start .
 
-echo  Press any key when you are finished...
-pause > nul
+echo.
+echo  Once you see the 'Web Highlight' icon in your toolbar, 
+echo  you can close this window.
+echo.
+pause

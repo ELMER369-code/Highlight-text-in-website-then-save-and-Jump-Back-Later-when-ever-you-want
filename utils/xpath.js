@@ -1,4 +1,4 @@
-// XPath Utilities for Web Highlight and Jump Back Later
+// XPath Utilities for Web Highlight and Jump Back Later by Lmer
 // Generate and evaluate XPath expressions
 
 const XPathUtils = {

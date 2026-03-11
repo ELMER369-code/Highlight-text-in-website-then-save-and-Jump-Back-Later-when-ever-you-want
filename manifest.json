@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Web Highlight and Jump Back Later",
+  "name": "Web Highlight and Jump Back Later by Lmer",
   "version": "1.0.0",
   "description": "Save any text you highlight on the web and jump back to that exact spot later.",
   "permissions": [
@@ -24,7 +24,7 @@
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     },
-    "default_title": "Web Highlight and Jump Back Later"
+    "default_title": "Web Highlight and Jump Back Later by Lmer"
   },
   "icons": {
     "16": "icons/icon-16.png",

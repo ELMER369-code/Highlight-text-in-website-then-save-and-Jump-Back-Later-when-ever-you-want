@@ -1,4 +1,4 @@
-# Web Highlight and Jump Back Later
+# Web Highlight and Jump Back Later by Lmer
 
 ![Web Highlight Hero](assets/hero.png)
 
@@ -21,7 +21,7 @@
 ---
 
 ## 🎯 Why it exists?
-We often find gems of information online—a quote, a statistic, or a specific paragraph. But traditional bookmarks only save the *page*, not the *spot*. **Web Highlight and Jump Back Later** lets you mark your exact spot so you can recall it instantly.
+We often find gems of information online—a quote, a statistic, or a specific paragraph. But traditional bookmarks only save the *page*, not the *spot*. **Web Highlight and Jump Back Later by Lmer** lets you mark your exact spot so you can recall it instantly.
 
 ## 🚀 Key Features
 
@@ -46,13 +46,14 @@ Built with modern web standards for speed and reliability:
 
 I've made it simple to install this extension on your machine:
 
-1. **Download and Extract** the files from this repository.
+1. **Download and Extract** the ZIP file from the [INSTALL] button above.
 2. **Double-click** the `setup.bat` file in the folder.
-   - This will open Chrome's Extensions page and show you where the files are.
+   - **Safety First**: If you're in your Downloads folder, the script will offer to move the files to your **Documents** folder safely so it won't be accidentally deleted.
+   - The script will then open the Chrome Extensions page for you automatically.
 3. **Turn ON "Developer mode"** in the top-right corner of Chrome.
-4. **Click "Load unpacked"** and select this folder.
+4. **Click "Load unpacked"** and select the folder shown by the script.
 
-*Done! You'll see the highlighter icon appear in your toolbar.*
+*Done! The highlighter icon will now appear in your toolbar. You can even delete the original ZIP file now.*
 
 ---
 

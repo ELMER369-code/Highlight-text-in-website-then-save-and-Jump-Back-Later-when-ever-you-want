@@ -1,4 +1,4 @@
-// Icon Generator for Web Highlight and Jump Back Later
+// Icon Generator for Web Highlight and Jump Back Later by Lmer
 // Run with: node generate-icons.js
 
 const fs = require('fs');

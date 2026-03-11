@@ -1,4 +1,4 @@
-// Web Highlight and Jump Back Later - Popup JavaScript
+// Web Highlight and Jump Back Later by Lmer - Popup JavaScript
 // Handles UI interactions, data display, and communication with background
 
 (function () {
