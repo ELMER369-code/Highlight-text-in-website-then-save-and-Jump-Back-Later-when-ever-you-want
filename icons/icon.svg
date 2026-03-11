@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="penGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#FFC107"/>
+    </linearGradient>
+    <linearGradient id="tipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFEB3B"/>
+      <stop offset="100%" style="stop-color:#FDD835"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Main body of highlighter pen -->
+  <g filter="url(#shadow)">
+    <!-- Pen body -->
+    <rect x="30" y="20" width="50" height="75" rx="8" fill="url(#penGradient)"/>
+    
+    <!-- Pen tip (highlight marker) -->
+    <path d="M30 95 L55 120 L80 95 Z" fill="url(#tipGradient)"/>
+    
+    <!-- Highlight glow effect -->
+    <ellipse cx="55" cy="115" rx="20" ry="8" fill="#FFEB3B" opacity="0.4"/>
+    
+    <!-- Pen grip lines -->
+    <rect x="38" y="55" width="34" height="3" rx="1" fill="#E6A800" opacity="0.5"/>
+    <rect x="38" y="62" width="34" height="3" rx="1" fill="#E6A800" opacity="0.5"/>
+    <rect x="38" y="69" width="34" height="3" rx="1" fill="#E6A800" opacity="0.5"/>
+    
+    <!-- Pen cap -->
+    <rect x="30" y="10" width="50" height="15" rx="4" fill="#FFA000"/>
+    
+    <!-- Shine highlight -->
+    <ellipse cx="42" cy="40" rx="6" ry="15" fill="white" opacity="0.3"/>
+    
+    <!-- Star sparkle -->
+    <g transform="translate(95, 25) scale(0.8)">
+      <polygon points="10,0 12,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 8,7" fill="#FFEB3B"/>
+    </g>
+    <g transform="translate(10, 85) scale(0.5)">
+      <polygon points="10,0 12,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 8,7" fill="#FFEB3B"/>
+    </g>
+  </g>
+</svg>
