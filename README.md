@@ -49,7 +49,8 @@ I've made it simple to install this extension on your machine:
 1. **Download and Extract** the ZIP file from the [INSTALL] button above.
 2. **Double-click** the `setup.bat` file in the folder.
    - **Safety First**: If you're in your Downloads folder, the script will offer to move the files to your **Documents** folder safely so it won't be accidentally deleted.
-   - The script will then open the Chrome Extensions page for you automatically.
+   - The script will then automatically open the **Manage Extensions** page in Chrome.
+   - *(Manual path: Click 3 dots in Chrome -> Extensions -> Manage Extensions)*
 3. **Turn ON "Developer mode"** in the top-right corner of Chrome.
    - *Note: If you have multiple Chrome profiles, make sure the one you want to use is open.*
 4. **Click "Load unpacked"** and select the folder shown by the script.

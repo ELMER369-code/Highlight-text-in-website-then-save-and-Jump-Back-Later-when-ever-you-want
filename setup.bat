@@ -54,7 +54,9 @@ echo  [SECURITY NOTE] Chrome requires you to click the button
 echo  manually to protect you from malicious software.
 echo  -------------------------------------------------------
 echo.
-echo  Opening Chrome Extensions page...
+echo  Opening the Chrome Manage Extensions page...
+echo  (Manual path: Click 3 dots -> Extensions -> Manage Extensions)
+echo.
 
 :: Try to find Chrome in common locations
 set "CHROME_PATH="
