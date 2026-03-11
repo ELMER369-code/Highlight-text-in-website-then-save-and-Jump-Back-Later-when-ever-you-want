@@ -38,12 +38,15 @@ if %errorlevel%==0 (
 echo.
 echo  TO INSTALL IN CHROME:
 echo.
-echo  1. In the Chrome window that just opened, TURN ON 
+echo  1. IMPORTANT: If you have multiple Chrome profiles (Accounts),
+echo     please open the one you want to use FIRST.
+echo.
+echo  2. In the Chrome window that just opened, TURN ON 
 echo     "Developer mode" (top-right corner).
 echo.
-echo  2. Click "Load unpacked".
+echo  3. Click "Load unpacked".
 echo.
-echo  3. Select THIS FOLDER: 
+echo  4. Select THIS FOLDER: 
 echo     !CURRENT_DIR!
 echo.
 echo  -------------------------------------------------------
@@ -60,10 +63,11 @@ if not defined CHROME_PATH if exist "%ProgramFiles(x86)%\Google\Chrome\Applicati
 if not defined CHROME_PATH if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" set "CHROME_PATH=%LocalAppData%\Google\Chrome\Application\chrome.exe"
 
 if defined CHROME_PATH (
+    :: If Chrome is already open, this will open a new tab in the active window
     start "" "!CHROME_PATH!" "chrome://extensions"
 ) else (
     :: Fallback to default browser if chrome isn't found in common spots
-    start chrome://extensions
+    start "" "chrome://extensions"
 )
 
 :: Open current folder in explorer to make selection easy

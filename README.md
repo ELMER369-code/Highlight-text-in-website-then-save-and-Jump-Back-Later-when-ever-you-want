@@ -51,6 +51,7 @@ I've made it simple to install this extension on your machine:
    - **Safety First**: If you're in your Downloads folder, the script will offer to move the files to your **Documents** folder safely so it won't be accidentally deleted.
    - The script will then open the Chrome Extensions page for you automatically.
 3. **Turn ON "Developer mode"** in the top-right corner of Chrome.
+   - *Note: If you have multiple Chrome profiles, make sure the one you want to use is open.*
 4. **Click "Load unpacked"** and select the folder shown by the script.
 
 *Done! The highlighter icon will now appear in your toolbar. You can even delete the original ZIP file now.*
