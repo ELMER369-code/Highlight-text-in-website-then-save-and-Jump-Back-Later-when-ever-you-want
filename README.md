@@ -2,6 +2,16 @@
 
 ![Web Highlight Hero](file:///C:/Users/user/.gemini/antigravity/brain/30e99614-c654-4b05-aca2-e8bb43b8cfc3/web_highlight_hero_mockup_1773192715267.png)
 
+<p align="center">
+  <a href="https://github.com/ELMER369-code/Highlight-text-in-website-then-save-and-Jump-Back-Later-when-ever-you-want/archive/refs/heads/main.zip">
+    <img src="https://img.shields.io/badge/INSTALL-DOWNLOAD_ZIP-blue?style=for-the-badge&logo=download" alt="Install">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/ELMER369-code">
+    <img src="https://img.shields.io/badge/GITHUB-PROFILE-lightgrey?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ELMER369-code/Highlight-text-in-website-then-save-and-Jump-Back-Later-when-ever-you-want)
 [![Platform](https://img.shields.io/badge/platform-Chrome-brightgreen.svg)](https://www.google.com/chrome/)
