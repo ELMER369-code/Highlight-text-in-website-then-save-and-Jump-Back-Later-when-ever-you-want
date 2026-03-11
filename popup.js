@@ -1,4 +1,4 @@
-// Highlight Teleport - Popup JavaScript
+// Web Highlight and Jump Back Later - Popup JavaScript
 // Handles UI interactions, data display, and communication with background
 
 (function () {
@@ -190,13 +190,13 @@
 
             card.addEventListener('click', (e) => {
                 if (!e.target.closest('.action-btn')) {
-                    teleportToHighlight(id);
+                    jumpBackToHighlight(id);
                 }
             });
 
             card.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' && !e.target.closest('.action-btn')) {
-                    teleportToHighlight(id);
+                    jumpBackToHighlight(id);
                 }
             });
 
@@ -224,7 +224,7 @@
         const safeTag = escapeHtml(highlight.tag || 'Uncategorized');
 
         return `
-      <li class="highlight-card" data-id="${highlight.id}" tabindex="0" role="button" aria-label="Teleport to ${safeTitle}">
+      <li class="highlight-card" data-id="${highlight.id}" tabindex="0" role="button" aria-label="Jump back to ${safeTitle}">
         <div class="highlight-header">
           <img class="highlight-favicon" src="${faviconUrl}" alt="" loading="lazy" onerror="this.style.display='none'">
           <span class="highlight-title" title="${safeTitle}">${safeTitle}</span>
@@ -269,16 +269,16 @@
     // Actions
     // ============================================
 
-    async function teleportToHighlight(id) {
+    async function jumpBackToHighlight(id) {
         const highlight = highlights.find(h => h.id === id);
         if (!highlight) return;
 
         try {
             await sendMessage({ action: 'teleport', highlight });
-            showToast('Teleporting...', 'success');
+            showToast('Jumping back...', 'success');
         } catch (error) {
             console.error('Teleport error:', error);
-            showToast('Failed to teleport', 'error');
+            showToast('Failed to jump back', 'error');
         }
     }
 

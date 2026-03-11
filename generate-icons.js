@@ -1,4 +1,4 @@
-// Icon Generator for Highlight Teleport
+// Icon Generator for Web Highlight and Jump Back Later
 // Run with: node generate-icons.js
 
 const fs = require('fs');

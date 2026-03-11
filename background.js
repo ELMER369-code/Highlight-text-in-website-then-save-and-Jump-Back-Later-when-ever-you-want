@@ -1,4 +1,4 @@
-// Highlight Teleport - Background Service Worker
+// Web Highlight and Jump Back Later - Background Service Worker
 // Handles context menus, keyboard shortcuts, and message passing
 
 // ============================================
@@ -9,7 +9,7 @@ chrome.runtime.onInstalled.addListener(() => {
   // Create simple context menu item
   chrome.contextMenus.create({
     id: 'save-highlight',
-    title: 'Save Highlight ✨',
+    title: "Jump Back to This ✨",
     contexts: ['selection']
   });
 
@@ -34,8 +34,8 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.notifications.create('onboarding', {
     type: 'basic',
     iconUrl: 'icons/icon-128.png',
-    title: 'Highlight Teleport Installed!',
-    message: 'Select text and press Ctrl+Shift+H or right-click to save highlights.',
+    title: 'Web Highlight Installed!',
+    message: 'Select text and press Ctrl+Shift+H or right-click to jump back later.',
     priority: 2
   });
 });
@@ -113,7 +113,7 @@ chrome.commands.onCommand.addListener(async (command) => {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'teleport') {
-    handleTeleport(request.highlight);
+    handleJumpBack(request.highlight);
     sendResponse({ success: true });
   } else if (request.action === 'getHighlights') {
     getHighlights().then(sendResponse);
@@ -143,10 +143,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 // ============================================
-// Teleport Handler
+// Jump Back Handler
 // ============================================
 
-async function handleTeleport(highlight) {
+async function handleJumpBack(highlight) {
   try {
     // Open URL in new tab
     const tab = await chrome.tabs.create({ url: highlight.url });

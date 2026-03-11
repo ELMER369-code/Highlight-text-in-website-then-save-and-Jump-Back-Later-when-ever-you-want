@@ -1,4 +1,4 @@
-// Storage Utilities for Highlight Teleport
+// Storage Utilities for Web Highlight and Jump Back Later
 // Chrome Storage wrapper with validation
 
 const StorageUtils = {

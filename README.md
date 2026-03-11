@@ -1,11 +1,11 @@
-# Highlight Teleport
+# Web Highlight and Jump Back Later
 
-A Chrome extension that lets you save text highlights from any webpage and "teleport" back to them instantly. Never lose your research context again.
+A Chrome extension that lets you save important information you find online and jump back to the exact spot whenever you need it.
 
 ## Features
 
 - 🎯 **Save Highlights**: Select text on any page and save with right-click or `Ctrl+Shift+H`
-- 🚀 **Teleport Back**: Click any saved highlight to reopen the page with text highlighted and scrolled into view
+- 🚀 **Jump Back**: Click any saved highlight to reopen the page with text highlighted and scrolled into view
 - 🔍 **Smart Search**: Filter highlights by text, URL, or tags
 - 🏷️ **Organize with Tags**: Categorize highlights as Work, Personal, Research, etc.
 - 📝 **Add Notes**: Attach personal notes to any highlight
@@ -35,7 +35,7 @@ A Chrome extension that lets you save text highlights from any webpage and "tele
    - Select the folder and click "Open"
 
 5. **Verify Installation**
-   - You should see "Highlight Teleport" in your extensions list
+   - You should see "Web Highlight and Jump Back Later" in your extensions list
    - The highlighter icon should appear in your toolbar
 
 ## Usage
@@ -44,13 +44,13 @@ A Chrome extension that lets you save text highlights from any webpage and "tele
 
 1. **Select any text** on a webpage
 2. Either:
-   - **Right-click** → Select "Save Highlight ✨"
+   - **Right-click** → Select "Jump Back to This ✨"
    - **Press** `Ctrl+Shift+H` (or `Cmd+Shift+H` on Mac)
 3. A notification confirms your highlight is saved
 
-### Teleporting to a Highlight
+### Jumping Back to a Highlight
 
-1. **Click** the Highlight Teleport icon in your toolbar
+1. **Click** the Web Highlight icon in your toolbar
 2. **Find** your highlight using search or scrolling
 3. **Click** on the highlight card
 4. The page opens in a new tab with your text highlighted and scrolled into view
@@ -102,7 +102,7 @@ teleport-note/
    - An XPath to locate the text
    - A timestamp
 
-2. **Teleporting**: When you click a highlight:
+2. **Jumping Back**: When you click a highlight:
    - Opens the URL in a new tab
    - Uses XPath to find the exact element
    - If XPath fails, uses fuzzy text matching
@@ -139,7 +139,7 @@ teleport-note/
 
 ## Troubleshooting
 
-**Highlight not found when teleporting?**
+**Highlight not found when jumping back?**
 - Page content may have changed since saving
 - The extension will show a notification and scroll to approximate location
 

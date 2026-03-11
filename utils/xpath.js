@@ -1,4 +1,4 @@
-// XPath Utilities for Highlight Teleport
+// XPath Utilities for Web Highlight and Jump Back Later
 // Generate and evaluate XPath expressions
 
 const XPathUtils = {

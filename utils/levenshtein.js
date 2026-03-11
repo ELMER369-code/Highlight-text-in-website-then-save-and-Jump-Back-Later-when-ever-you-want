@@ -1,4 +1,4 @@
-// Levenshtein Distance Utilities for Highlight Teleport
+// Levenshtein Distance Utilities for Web Highlight and Jump Back Later
 // Fuzzy text matching when exact matching fails
 
 const LevenshteinUtils = {

@@ -1,4 +1,4 @@
-// Highlight Teleport - Content Script
+// Web Highlight and Jump Back Later - Content Script
 // Handles text selection, XPath capture, and highlight injection
 
 (function () {
