@@ -1,6 +1,6 @@
 # Web Highlight and Jump Back Later
 
-![Web Highlight Hero](file:///C:/Users/user/.gemini/antigravity/brain/30e99614-c654-4b05-aca2-e8bb43b8cfc3/web_highlight_hero_mockup_1773192715267.png)
+![Web Highlight Hero](assets/hero.png)
 
 <p align="center">
   <a href="https://github.com/ELMER369-code/Highlight-text-in-website-then-save-and-Jump-Back-Later-when-ever-you-want/archive/refs/heads/main.zip">
