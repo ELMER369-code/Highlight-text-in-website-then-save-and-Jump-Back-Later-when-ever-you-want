@@ -53,8 +53,18 @@ echo  -------------------------------------------------------
 echo.
 echo  Opening Chrome Extensions page...
 
-:: Open Chrome Extensions page
-start chrome://extensions
+:: Try to find Chrome in common locations
+set "CHROME_PATH="
+if exist "%ProgramFiles%\Google\Chrome\Application\chrome.exe" set "CHROME_PATH=%ProgramFiles%\Google\Chrome\Application\chrome.exe"
+if not defined CHROME_PATH if exist "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" set "CHROME_PATH=%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"
+if not defined CHROME_PATH if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" set "CHROME_PATH=%LocalAppData%\Google\Chrome\Application\chrome.exe"
+
+if defined CHROME_PATH (
+    start "" "!CHROME_PATH!" "chrome://extensions"
+) else (
+    :: Fallback to default browser if chrome isn't found in common spots
+    start chrome://extensions
+)
 
 :: Open current folder in explorer to make selection easy
 start .
