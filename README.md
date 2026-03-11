@@ -23,6 +23,14 @@
 ## 🎯 Why it exists?
 We often find gems of information online—a quote, a statistic, or a specific paragraph. But traditional bookmarks only save the *page*, not the *spot*. **Web Highlight and Jump Back Later by Lmer** lets you mark your exact spot so you can recall it instantly.
 
+### 🔍 Solve Common Search Problems:
+- *"How to save important info or descriptions inside a website?"*
+- *"Apps that can save website paragraphs and jump back to them later?"*
+- *"How to highlight text on a website and save it for research?"*
+- *"Software that saves the exact location of info on a web page?"*
+
+This extension is the answer for researchers, students, and anyone who needs to **save information inside a website and come back to that saved info in the same website** without searching again.
+
 ## 🚀 Key Features
 
 - ✨ **Precision Savings**: Select any text and right-click to "Jump Back to This ✨".
@@ -75,6 +83,8 @@ git clone https://github.com/ELMER369-code/Highlight-text-in-website-then-save-a
 - `background.js`: Handles context menus and storage logic.
 - `content.js`: Manages text selection and page markers.
 - `popup/`: Everything for the extension's user interface.
+
+---
 
 ---
 

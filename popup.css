@@ -107,6 +107,17 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.3px;
+    text-align: center;
+    flex: 1;
+}
+
+.signature {
+    color: var(--accent);
+    font-size: 0.8em;
+    font-weight: 500;
+    display: block;
+    margin-top: 2px;
+    opacity: 0.9;
 }
 
 .header-actions {

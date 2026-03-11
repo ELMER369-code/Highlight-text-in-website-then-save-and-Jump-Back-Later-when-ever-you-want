@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Web Highlight and Jump Back Later by Lmer",
   "version": "1.0.0",
-  "description": "Save any text you highlight on the web and jump back to that exact spot later.",
+  "description": "Save important information inside a website and jump back to that exact spot later. The ultimate web highlighter and contextual bookmark tool.",
   "permissions": [
     "activeTab",
     "storage",
