@@ -1,173 +1,72 @@
 # Web Highlight and Jump Back Later
 
-A Chrome extension that lets you save important information you find online and jump back to the exact spot whenever you need it.
+![Web Highlight Hero](file:///C:/Users/user/.gemini/antigravity/brain/30e99614-c654-4b05-aca2-e8bb43b8cfc3/web_highlight_hero_mockup_1773192715267.png)
 
-## Features
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ELMER369-code/Highlight-text-in-website-then-save-and-Jump-Back-Later-when-ever-you-want)
+[![Platform](https://img.shields.io/badge/platform-Chrome-brightgreen.svg)](https://www.google.com/chrome/)
 
-- 🎯 **Save Highlights**: Select text on any page and save with right-click or `Ctrl+Shift+H`
-- 🚀 **Jump Back**: Click any saved highlight to reopen the page with text highlighted and scrolled into view
-- 🔍 **Smart Search**: Filter highlights by text, URL, or tags
-- 🏷️ **Organize with Tags**: Categorize highlights as Work, Personal, Research, etc.
-- 📝 **Add Notes**: Attach personal notes to any highlight
-- 📦 **Import/Export**: Backup your highlights as JSON
-- 🎨 **Customizable**: Choose your highlight color and set domain blacklists
-- 🔒 **Privacy-First**: All data stored locally, no external servers
-
-## Installation
-
-### From Chrome Web Store (Coming Soon)
-*Not yet available*
-
-### Manual Installation (Developer Mode)
-
-1. **Download or Clone** this repository to your computer
-
-2. **Open Chrome Extensions**
-   - Type `chrome://extensions` in the address bar
-   - Or go to Menu → More Tools → Extensions
-
-3. **Enable Developer Mode**
-   - Toggle the "Developer mode" switch in the top-right corner
-
-4. **Load the Extension**
-   - Click "Load unpacked"
-   - Navigate to the `teleport-note` folder
-   - Select the folder and click "Open"
-
-5. **Verify Installation**
-   - You should see "Web Highlight and Jump Back Later" in your extensions list
-   - The highlighter icon should appear in your toolbar
-
-## Usage
-
-### Saving a Highlight
-
-1. **Select any text** on a webpage
-2. Either:
-   - **Right-click** → Select "Jump Back to This ✨"
-   - **Press** `Ctrl+Shift+H` (or `Cmd+Shift+H` on Mac)
-3. A notification confirms your highlight is saved
-
-### Jumping Back to a Highlight
-
-1. **Click** the Web Highlight icon in your toolbar
-2. **Find** your highlight using search or scrolling
-3. **Click** on the highlight card
-4. The page opens in a new tab with your text highlighted and scrolled into view
-
-### Managing Highlights
-
-- **Edit**: Click the pencil icon to change tag or add notes
-- **Delete**: Click the trash icon to remove a highlight
-- **Export**: Click "Export" to download all highlights as JSON
-- **Import**: Click "Import" to restore highlights from a JSON backup
-- **Clear All**: Click "Clear All" to delete all highlights (with confirmation)
-
-### Settings
-
-Access settings by clicking the "Settings" tab:
-
-- **Highlight Color**: Choose the color for highlighted text
-- **Maximum Highlights**: Set storage limit (default 1000)
-- **Blacklisted Domains**: Add domains where highlighting is disabled
-
-## File Structure
-
-```
-teleport-note/
-├── manifest.json        # Extension configuration
-├── background.js        # Service worker (context menus, storage)
-├── content.js          # Text selection and highlighting
-├── content.css         # Highlight styles for pages
-├── popup.html          # Extension popup UI
-├── popup.css           # Popup styling
-├── popup.js            # Popup interactions
-├── utils/
-│   ├── storage.js      # Storage utilities
-│   ├── xpath.js        # XPath generation/evaluation
-│   └── levenshtein.js  # Fuzzy text matching
-└── icons/
-    ├── icon.svg        # Vector source
-    ├── icon-16.png     # Toolbar icon
-    ├── icon-32.png     # Various UI sizes
-    ├── icon-48.png     # Extensions page
-    └── icon-128.png    # Chrome Web Store
-```
-
-## How It Works
-
-1. **Saving**: When you save a highlight, the extension captures:
-   - The selected text
-   - The page URL and title
-   - An XPath to locate the text
-   - A timestamp
-
-2. **Jumping Back**: When you click a highlight:
-   - Opens the URL in a new tab
-   - Uses XPath to find the exact element
-   - If XPath fails, uses fuzzy text matching
-   - Highlights and scrolls to the text
-
-3. **Fallback Strategy**:
-   - XPath exact match (fastest)
-   - DOM text search (exact text)
-   - Levenshtein fuzzy match (>70% similarity)
-   - Nearest paragraph match (last resort)
-
-## Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+Shift+H` | Save selected text as highlight |
-| `Escape` | Close modal dialogs |
-
-## Permissions Explained
-
-- **activeTab**: Access current tab to save highlights
-- **storage**: Store highlights locally
-- **contextMenus**: Add "Save Highlight" to right-click menu
-- **notifications**: Show success/error notifications
-- **scripting**: Inject highlight scripts into pages
-
-## Privacy
-
-- ✅ All data stored locally in Chrome storage
-- ✅ No external servers or APIs
-- ✅ No tracking or analytics
-- ✅ No AI integration
-- ✅ Source code is fully transparent
-
-## Troubleshooting
-
-**Highlight not found when jumping back?**
-- Page content may have changed since saving
-- The extension will show a notification and scroll to approximate location
-
-**Extension not working on a site?**
-- Some sites (like `chrome://` pages) don't allow extensions
-- Check if the domain is in your blacklist
-
-**Storage full?**
-- Delete old highlights or increase the limit in settings
-- Maximum supported: 1000 highlights
-
-## Development
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/highlight-teleport.git
-
-# Load extension in Chrome
-# 1. Go to chrome://extensions
-# 2. Enable Developer mode
-# 3. Click "Load unpacked"
-# 4. Select the project folder
-```
-
-## License
-
-MIT License - Feel free to use, modify, and distribute.
+**Never lose your place on the web again.** Save any text you highlight and jump back to the exact spot whenever you need it.
 
 ---
 
-Made with ❤️ for researchers, readers, and knowledge seekers.
+## 🎯 Why it exists?
+We often find gems of information online—a quote, a statistic, or a specific paragraph. But traditional bookmarks only save the *page*, not the *spot*. **Web Highlight and Jump Back Later** lets you mark your exact spot so you can recall it instantly.
+
+## 🚀 Key Features
+
+- ✨ **Precision Savings**: Select any text and right-click to "Jump Back to This ✨".
+- ⚡ **Instant Recall**: Click any highlight in your collection to jump back to the exact paragraph.
+- 🏷️ **Smart Organization**: Categorize with tags (Work, Research, Personal) and add notes.
+- 🔍 **Global Search**: Find that one piece of info across all the sites you've visited.
+- 🔒 **Local & Secure**: Your data never leaves your computer. No accounts, no tracking.
+
+---
+
+## 🛠️ Tech Stack
+
+Built with modern web standards for speed and reliability:
+- **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3.
+- **Persistence**: `chrome.storage.local` API.
+- **Smart Logic**: XPath Positioning + Levenshtein Fuzzy Matching (to find your text even if the page content changes slightly).
+
+---
+
+## 📥 Installation (Easy Method)
+
+I've made it simple to install this extension on your machine:
+
+1. **Download and Extract** the files from this repository.
+2. **Double-click** the `setup.bat` file in the folder.
+   - This will open Chrome's Extensions page and show you where the files are.
+3. **Turn ON "Developer mode"** in the top-right corner of Chrome.
+4. **Click "Load unpacked"** and select this folder.
+
+*Done! You'll see the highlighter icon appear in your toolbar.*
+
+---
+
+## 👩‍💻 For Developers
+
+If you want to contribute or modify the code:
+
+```bash
+# Clone the repository
+git clone https://github.com/ELMER369-code/Highlight-text-in-website-then-save-and-Jump-Back-Later-when-ever-you-want.git
+
+# Load unpacked extension from the cloned directory
+```
+
+### File Structure
+- `manifest.json`: Extension core configuration.
+- `background.js`: Handles context menus and storage logic.
+- `content.js`: Manages text selection and page markers.
+- `popup/`: Everything for the extension's user interface.
+
+---
+
+## 📄 License
+Individual use and modifications are encouraged! Distributed under the [MIT License](LICENSE).
+
+---
+Made with ❤️ for knowledge seekers.
